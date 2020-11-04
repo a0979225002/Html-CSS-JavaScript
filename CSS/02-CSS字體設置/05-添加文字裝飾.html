@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ol {
+            margin: 0px 0px 10px 20px;
+        }
+
+
+        .head {
+            background-color: blue;
+            font: 900 30px 'KaiTi';
+            color: greenyellow;
+        }
+
+        .example {
+            text-align: center;
+            background-color: black;
+            font: 900 30px 'KaiTi';
+            color: blanchedalmond;
+        }
+
+        .underline {
+            padding: 10px;
+            text-decoration: underline;
+            /*下滑線*/
+        }
+
+        .overline {
+            padding: 10px;
+            text-decoration: overline;
+            /*上滑線*/
+        }
+
+        .line-through {
+            padding: 10px;
+            text-decoration: line-through;
+            /*刪除線*/
+        }
+
+        .none {
+            padding: 10px;
+            text-decoration: none;
+            /*默認,再者裡使用默認方法取消了a標籤的下滑線*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <ol>
+            <li>text-decoration: nono 默認</li>
+            <li>text-decoration: underline 下滑線</li>
+            <li>text-decoration: overline 上滑線</li>
+            <li>text-decoration: line-through 刪除線</li>
+        </ol>
+    </div>
+    <div class="example">
+        <div class="underline">下滑線效果 underline</div>
+        <div class="overline">上滑線效果 underline</div>
+        <div class="line-through">刪除線效果 line-through</div>
+    </div>
+    <a href="#" class="none">取消下滑線效果 none</a>
+</body>
+
+</html>
