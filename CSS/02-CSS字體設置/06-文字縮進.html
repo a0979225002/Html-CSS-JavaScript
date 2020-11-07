@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .text20px {
+            /* 讓文字的第一行進行縮進 多少距離 */
+            text-indent: 20px;
+
+        }
+
+        div {
+            /* em是一個相對單位,他會是獲取現在文字大小
+            假如當前文字該大小是16px,那一個em = 16px 兩個em = 32px  */
+            font-size: 16px;
+            text-indent: 2em;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1> text-indent: 20px; 讓文字的第一行進行縮進 多少距離</h1>
+    <h1>em是一個相對單位,他會是獲取現在文字大小</h1>
+    <h1>假如當前該文字大小是16px,那一個em = 16px 兩個em = 32px</h1>
+
+    <h3>各位玩家您好</h3>
+
+    <div>標題開頭,他距離左側兩個文字距離</div>
+
+    <p>新活動預告影片預計將於2020/11/05 20:00左右於YouTube Live播出。</p>
+    <p class="text20px">20px ,他距離左側20px</p>
+</body>
+
+</html>

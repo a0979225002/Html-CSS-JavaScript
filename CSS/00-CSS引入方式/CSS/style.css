@@ -1,0 +1,9 @@
+/* 這個css文件只有css代碼 */
+h1 {
+    width: 800px;
+}
+
+div {
+    color: aquamarine;
+    background-color: black;
+}

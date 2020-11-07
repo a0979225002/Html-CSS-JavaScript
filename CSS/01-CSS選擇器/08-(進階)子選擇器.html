@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav>a {
+            background-color: black;
+            color: lightcoral;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>子選擇器只能選擇父類下面一級的元素,兒子底下的元素將不會做選擇</h1>
+    <img src="images/02.png">
+    <div class="nav">
+        <a href="#">我是兒子</a>
+        <p>
+
+            <span><a href="#">我是孫子</a></span>
+        </p>
+    </div>
+</body>
+
+</html>
