@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 指定尚未被用戶訪問的連結,更改樣式 */
+      a:link {
+        background-color: rgb(207, 207, 252);
+        color: rgb(187, 37, 37);
+        text-decoration: none;
+      }
+      /* 指定已被被用戶點擊過的連結,更改樣式 */
+      a:visited {
+        color: yellow;
+        background-color: black;
+      }
+      /* 指定用戶當前滑鼠經過到的物件,更改樣式 */
+      a:hover {
+        color: lightgreen;
+        background-color: blueviolet;
+      }
+      /* 指定用戶當前滑鼠點擊下去的物件,還尚未將右鍵放開前,更改的樣式 */
+      a:active {
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+        <img src="images/04.png">
+        <h1>注意：如果有要使用多個不同的偽連結,需要遵守建立順序,不然容易造成失效</h1>
+        <div><img src="images/05.png" ></div>
+        <a href="#">偽裝連結 link</a>
+  </body>
+</html>
