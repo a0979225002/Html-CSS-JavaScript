@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .stack ol {
+            color: blue;
+        }
+        .stack ol>li {
+            /*上面的藍色字體被此行子側字體蓋過*/
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>層疊性</h1>
+    <div class="stack">
+        <ol>
+            <li>寫在同一個style中的CSS樣式,如果重複,將會被後面的樣式蓋過</li>
+        </ol>
+    </div>
+
+</body>
+</html>

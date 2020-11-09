@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .inherit {
+        color: aqua;
+        background-color: black;
+        font-size: 30px;
+      }
+      .heigth {  
+        color: rgb(157, 90, 225);
+        background-color: black;
+        font: 30px/2 "Microsoft YaHei";
+        /* 相當同等 line-height: 60px; */
+        /*這樣寫法,相當於給予行間距,當前字體大小＋上下行高 = 60 */
+      }
+
+    .heigth div {
+        /*因為繼承了父親的2倍屬性,所以他的字體行高也自動更新*2 此時的字體高度加上上下行高 = 100px*/
+        /* 相當同等 line-height: 100px; */
+        font-size: 50px;
+      }
+    .heigth p {
+        margin: 0%;
+        /*因為繼承了父親的2倍屬性,所以他的字體行高也自動更新*2 此時的字體高度加上上下行高 = 40px*/
+        /* 相當同等 line-height: 40px; */
+        font-size: 20px;
+    }  
+    div>ul>li,a{
+        font-size: 30px;
+        text-decoration: none;
+    }
+    </style>
+  </head>
+  <body>
+    <img src="images/01.png" />
+
+    <div class="inherit">
+      <p>我是p標籤,但是我透過更改父類div標籤樣式來達到,p標籤繼承父類的效果</p>
+    </div>
+    <hr />
+    <img src="images/02.png">
+    <div class="heigth">
+      <div>行高繼承01</div>
+      <p>行高繼承02</p>
+    </div>
+
+    <div>
+        <ul>
+            <li>備註: 如果忘記文字行高是啥
+                <a href="../02-CSS字體設置/07-行的間距.html">點擊此查看行高重點</a>
+            </li>
+        </ul>
+    </div>
+  </body>
+</html>

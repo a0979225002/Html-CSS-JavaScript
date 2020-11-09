@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        div {
+            text-align: center;
+            color: aliceblue;
+            font: 20px/10 'Microsoft YaHei' ;
+            background-color: blueviolet!important;   
+        }
+
+        .weighted {
+            /* 他的權重是比上面大10 */
+            background-color: brown!important;
+        }
+        ol {
+            font-size: 20px;
+        }
+        .major {
+            color: red;
+        }
+        ul {
+            font-size: 20px;  
+        }
+
+    </style>
+</head>
+<body>
+    <img src="images/03.png" >
+
+    <h1>特殊的Important</h1>
+
+    <ol>
+        <li>important是所有權重最高的</li>
+        <li>只有important可以超越important</li>
+        <li>注意：important不要亂用,因為這會讓程式維護不容易</li>
+        <li class="major">注意：權重不會繼承,即使父類權重是important,子類權重還是重0開始計算</li>
+    </ol>
+    <hr>
+    <ul>
+        <li>權重在類選擇器中與偽類選擇棄會出現疊加問題,需要會算疊加權重</li>
+        <li>全疊加不會進位,他不是二進制</li>
+    </ul>
+
+    <div class="weighted" style="height: 200px; width: 200px; background-color: black;">
+            我被important蓋過了
+    </div>
+</body>
+</html>
