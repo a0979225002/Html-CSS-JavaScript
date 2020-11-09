@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .backgroundImg1 {
+        height: 500px;
+        background-image: url(images/01.png);
+      }
+      div > span {
+        font-size: 47px;
+        color: aliceblue;
+        background-color: black;
+        line-height: 500px;
+      }
+      .backgroundImg2 {
+        height: 500px;
+        background-color: black;
+        background-image: url(images/03.png);
+        background-repeat: no-repeat;
+        /* 不平鋪，只出現一張 */
+      }
+      .backgroundImg3 {
+        background-color: rgb(8, 8, 111);
+        height: 700px;
+        background-image: url(images/03.png);
+        background-repeat: repeat-x;
+        /* 沿著x軸平鋪 */
+      }
+      .backgroundImg4 {
+        background-color: teal;
+        height: 700px;
+        background-image: url(images/03.png);
+        background-repeat: repeat-y;
+        /* 沿著y軸平鋪 */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>使用時機基本用在背景或icon上面</h1>
+    <img src="images/02.png" alt="" />
+    <div class="backgroundImg1">
+      <span>背景圖片不設置時,將會自動延伸複製該圖片</span>
+    </div>
+
+    <div class="backgroundImg2">
+      <span>background-repeat: no-repeat;背景圖片只出現一張</span>
+    </div>
+    <div class="backgroundImg3">
+      <span>background-repeat: repeat-x;背景圖片沿著x軸平鋪</span>
+    </div>
+    <div class="backgroundImg4">
+      <span>background-repeat: no-repeat:背景圖片沿著y軸平鋪</span>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a {
+            width: 200px;
+            height: 50px;
+            background-color: brown;
+            display: block;
+            color: rgb(223, 255, 81);
+            text-align: center;
+        }
+        div {
+            /*轉行內元素寬高失效*/
+            width: 200px;
+            height: 50px;
+            background-color: aqua;
+            display: inline;
+        }
+        span {
+            color: aquamarine;
+            text-align: center;
+            display: inline-block;
+            width: 400px;
+            height: 50px;
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS: display:block 使 行內元素轉成塊元素,讓他能自訂大小</h1>
+    <a href="#" >我是行內元素1</a>
+    <a href="#" >我是行內元素2</a>
+    <a href="#" >我是行內元素3</a>
+    <a href="#" >我是行內元素4</a>
+    <a href="#" >我是行內元素5</a>
+    <hr>
+    <h1>CSS: display: inline 使塊元素轉成行內元素,轉換後,無法更改大小</h1>
+    <div>我是塊元素1</div>
+    <div>我是塊元素2</div>
+    <div>我是塊元素3</div>
+    <hr>
+    <h1>CSS: display: inline-block 使 行內元素轉成塊元素</h1>
+    <h1>CSS: display: inline-block 上面div轉換成行內元素,如果想更改大小,可用行內塊元素</h1>
+    <span>我是行內元素,要轉換成行內塊元素1</span>
+    <span>我是行內元素,要轉換成行內塊元素2</span>
+    <span>我是行內元素,要轉換成行內塊元素3</span>
+</body>
+</html>

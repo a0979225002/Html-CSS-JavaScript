@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .img1 {
+        background-color: black;
+        height: 700px;
+        background-image: url(images/03.png);
+        background-repeat: no-repeat;
+        background-position: center top;
+        /* 置中靠上 */
+        /*如果只險一個參數,他的y軸是默認居中的*/
+      }
+      span {
+          color: red;
+      }
+      h3 {
+        width: 500px;
+        height: 50px;
+        color: aliceblue;
+        background-color: rgb(7, 24, 24);
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 50px;
+        text-indent: 10em;
+        /* 位移文字 */
+        background-image: url(images/logo_app.png);
+        background-repeat: no-repeat;
+        background-position: left;
+        /* 置中靠左 */
+        /*如果只險一個參數,他的y軸是默認居中的*/
+      }
+      .img2 {
+        width: 500px;
+        height: 500px;
+        background-color: black;
+        background-image: url(images/logo_app.png);
+        background-repeat: no-repeat;
+        background-position: 50% 90%;
+        /* y軸不寫的話,默認為50% */
+      }
+      .img3 {
+        width: 500px;
+        height: 500px;
+        background-color: black;
+        background-image: url(images/logo_app.png);
+        background-repeat: no-repeat;
+        background-position: center 20%;
+        /* 混合模式,基本是對y軸進行微調 */
+      }
+      
+    </style>
+  </head>
+  <body>
+    <img src="images/04.png" alt="" />
+    <hr />
+    <h1>background-position: 方位命名</h1>
+    <div class="img1"></div>
+    <hr />
+    <h3>測試左側放icon</h3>
+    <hr />
+    <h1>background-position: x軸 y軸 <span>(精準方位)</span></h1>
+    <div class="img2"></div>
+    <hr>
+    <h1>background-position: 方位命名 y軸 <span>(混合單位)</span></h1>
+    <div class="img3"></div>
+  </body>
+</html>

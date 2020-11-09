@@ -5,10 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        
+      /* 當用戶點擊該input獲取焦點時,會調用這裡的樣式 */
+      input:focus {
+        background-color: lightgreen;
+      }
     </style>
   </head>
   <body>
-
+    <h1>注意:只能使用在input標籤上,因為只有intput標籤才有焦點</h1>
+    <h1>當用戶點擊該input獲取焦點時,會調用這裡的樣式</h1>
+    <form action="#">
+      <input type="text" />
+      <input type="text" />
+      <input type="text" />
+    </form>
   </body>
 </html>

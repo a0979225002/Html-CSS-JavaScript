@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .row {
+        /* span標籤因為換行符的關係造成兩個標籤之間空格,讓父類使用0px的字體大小即可解決 */
+          font-size: 0px;
+        }
+        .row span {
+            background-color: brown;
+            color: aqua;
+            font-size: 70px;
+        }
+    </style>
+</head>
+<body>
+    <img src="images/02.png" >
+    <div class="row">
+        <span>123</span>
+        <span>123</span>
+        <span>123</span>
+        <span>123</span>
+    </div>
+</body>
+</html>
