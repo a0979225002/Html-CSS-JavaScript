@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul>li {
+            font-size: 20px;
+        }
+
+        table {
+            width: 300px;
+            height: 300px;
+            text-align: center;
+    
+        }
+        table,th,td {
+            border: 5px solid saddlebrown;
+            border-collapse: collapse;/*合併相鄰的邊框*/
+        }
+    </style>
+</head>
+<body>
+    <h1>border-collapse: collapse;</h1>
+    <ul>
+        <li>將相鄰的邊框合併成一個邊框 (1+1 = 1 的效果)</li>
+    </ul>
+    <table>
+        <tr>
+            <th>標題</th>
+            <th>標題</th>
+            <th>標題</th>
+        </tr>
+        <tr>
+            <td>value1</td>
+            <td>value2</td>
+            <td>value3</td>
+        </tr>
+        <tr>
+            <td>value1</td>
+            <td>value2</td>
+            <td>value3</td>
+        </tr>
+    </table>
+    <ul>
+        <li>注意:當對一個盒子(例如div標籤)下border樣式時</li>
+        <li>這個盒子的總寬高是(原盒子寬高)+(border的邊框寬度)*2</li>
+    </ul>
+</body>
+</html>

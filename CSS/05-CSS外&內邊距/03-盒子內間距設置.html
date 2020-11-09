@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul li {
+            font-size: 20px;
+        }
+        span {
+            font-size: 30px;
+            font-weight: 900;
+        }
+        .paddingBox {
+            width: 300px;
+            height: 300px;
+            background-color: brown;
+            padding: 30px 0px 0px 0px;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>padding 內間距</h1>
+    <img src="images/01.png">
+    <div class="paddingBox">
+        <span>value1</span>
+        <span>value2</span>
+        <span>value3</span>
+        <span>value4</span>
+        <span>value5</span>
+    </div>
+    <ul>
+        <li>注意:對盒子設置padding屬性,將會影響該盒子大小</li>
+        <li>如果不想變動原盒子大小,需將該padding的值對該盒子寬高進行減去</li>
+        <li>特殊：當該盒子沒被指定width/heigth屬性時,將不會撐開超過父類</li>
+    </ul>
+</body>
+</html>

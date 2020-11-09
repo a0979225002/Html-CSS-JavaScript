@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span {
+            margin: 10px;
+            display: inline-block;
+            text-align: center;
+            line-height: 100px;
+            width: 100px;
+            height: 100px;
+        }
+        .box1 {
+      
+            border-width: 10px;
+            border-style: inset; /*設置邊框時,style屬性一定要寫,不然不會顯示*/
+            border-color: rgb(50, 49, 49);
+        }
+        .box2 {
+            border: 10px dashed darkcyan;/*無順序規範*/
+        }
+        .box3 {
+
+            border-radius: 90px;
+            border: 10px double lightcoral;
+            border-top: none ;
+        }
+    </style>
+</head>
+<body>
+    <span class="box1">一般寫法</span>
+    <span class="box2">混合寫法</span>
+    <span class="box3">無上邊框</span>
+</body>
+</html>
