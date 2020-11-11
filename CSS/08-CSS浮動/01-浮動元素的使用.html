@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      ul li {
+          font-size: 20px;
+      }  
+      .floatBox {
+          border: 3px solid black;
+          width: 150px;
+          height: 150px;
+          background-color: aqua;
+          float: left;
+          line-height: 150px;
+       
+      }
+      div {
+          font-size: 30px;
+          line-height: 300px;
+          width: 300px;
+          height: 300px;
+          background-color: blueviolet;
+          text-align: center;
+      }
+      img {
+          width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>浮動 float</h1>
+    <ul>
+      <li>float 就是讓該物件擁有網上浮起的效果</li>
+      <li>能讓該物件浮起,就意味著該物件原本的位置沒有東西</li>
+      <li>如果該浮起的物件後面還有一個一般物件,那他將會位移到那個位置</li>
+      <li>如果不懂,把它想成圖層關係</li>
+      <li>原物件div是底圖層,有float的物件是上圖層，div 上的物件也是上圖層</li>
+      <li>因此在這個例子,圖片與float的物件在同圖層搶位子,圖片被往下移動</li>
+    </ul>
+    <h3>示範：</h3>
+    <div class="floatBox">我是上層</div>
+    <div>
+        <img src="../CSS/04-CSS背景設置/images/03.png">
+    </div>
+  </body>
+</html>
